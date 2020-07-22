@@ -1,0 +1,154 @@
+label {
+    color: #3E2723;
+    stroke: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card{
+    margin:auto;
+    width:50%;
+}
+.card-index{
+    margin:auto;
+    width:100%;
+}
+
+.card-img{
+    width:100%; padding: 1px ;
+}
+
+.inner-card{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn{
+    font-weight: bolder;
+    height: 40px;
+    width: 100%;
+    background-color: #EF9A9A; 
+    border-radius: 40px!important; 
+    color: black;
+}
+
+.btn:hover{
+    background-color: rgb(239, 199, 154);
+    transform: scale(1.08);
+}
+
+.delete-btn{
+    background-color: #FBB124;
+    border-radius: 30px!important; 
+    color: black;
+    height: 40px;
+    width: 100%;
+}
+
+.delete-btn:hover{
+    background-color: rgb(239, 199, 154);
+    transform: scale(1.2);
+}
+
+.card-upper-space{
+   padding-top: 100px;
+}
+
+.card-lower-space{
+    padding-bottom: 100px;
+ }
+
+ .bg{
+    background-color: #e79087;
+    background-image: linear-gradient(315deg, #e79087 0%, #fcd181 74%);
+    
+ }
+
+ .bg-light{
+     background-color: #FFCC80!important;
+ }
+
+ .loader {
+    border-top: 16px solid #FF9800;
+    border-bottom: 16px solid #e79087;
+  }
+
+  #title, #lyric, #foot_note, #disc {
+      border-radius: 10px!important;
+  }
+
+  .show-note, .load-note{
+    background-color: #E0E0E0;
+    border-radius: 10px;
+
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+  }
+
+  .update-button{
+      border-radius: 10px;
+      color: aliceblue;
+      font-weight: bolder;
+      height: 50px;
+      border: #E0E0E0 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #dda670;
+  }
+
+  .list-group-item:hover{
+      background-color: #fcd181;
+      transform: scale(1.05);
+  }
+
+
+  #nav-img{
+    width: 15%; 
+    margin-left: 10px;
+    margin-top: 10px
+    }
+
+    #nav-img:hover{
+        opacity: 50%;
+    }
+
+    .wel-text{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(88, 2, 2);
+    }
+
+    /* .container {
+        width: 1000000px;
+        position: relative;
+        text-align: center;
+
+      }
+      
+      
+      /* Centered text */
+      .centered {
+          width: 80%;
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      } 
+
+
+
+
+
+  /* .form-control{
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  } */
+

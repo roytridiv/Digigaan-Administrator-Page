@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta property="og:image" content="card-img.jpg" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        গীতাবিতান অ্যাডমিন প্যানেলে 
+    </title>
+</head>
+
+<body style="background-color: #dda670;">
+
+
+    <nav class="navbar navbar-light" style="background-color: #dda670;">
+
+        <img id="nav-img" src="nav-logo3.png" loading="lazy" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <button id="b1" value = "show" class="nav-link list-group-item" data-toggle="collapse" data-target=".navbar-collapse.show" style="width: 100%;">গান যোগ করুন</button>
+                  </li>
+                  <li class="nav-item active">
+                    <button id="b2" value = "hide" class="nav-link list-group-item"  data-toggle="collapse" data-target=".navbar-collapse.show" style="width: 100%;">গান ডিলিট করুন</button>
+                  </li>
+                  <li class="nav-item active">
+                    <button id="b3" value = "hide" class="nav-link list-group-item"  data-toggle="collapse" data-target=".navbar-collapse.show" style="width: 100%;">গান আপডেট করুন</button>
+                  </li>
+                </ul>
+              </div>
+
+    </nav>
+
+
+    <div id="home" class="home">
+        <div class="card-index">
+            <img class="card-img" src="card-img.jpg" style="padding: 0%!important;">
+            <div class="wel-text">
+                <h1 style="font-weight: bolder;"></h1>
+                <p></p>
+            </div>
+        </div>
+    
+        <div class="centered">
+            <div class="card" style="width: 100%; 
+        background-color:azure; 
+        opacity: 80%;
+        border: 5px;
+        border-radius:100px;">
+                <div class="card-body">
+                    <h5 class="card-title wel-text">গীতাবিতান অ্যাডমিন প্যানেলে আপনাকে স্বাগতম।</h5>
+                    <p class="card-text" style="font-size: 25px;
+            text-align: center;
+            padding: 2%;">এখানে আপনি ডাটাবেস থেকে যে কোন গান যুক্ত করতে, সরিয়ে দিতে বা আপডেট করতে পারবেন। এই
+                        ওয়েবসাইটটি পরীক্ষার
+                        উদ্দেশ্যে তৈরি করা হয়েছে।</p>
+                </div>
+            </div>
+    
+    
+    
+            <div class="container-fluid" style="padding-top:20px;
+            padding-bottom: 10px; 
+            background-color: #dda670;
+             width: 50%;">
+    
+                <a href="https://play.google.com/store/apps/details?id=com.DigiGaan.gitabitan">
+                    <img src="dwn-but.png" style="width: 100%; opacity: 80%; margin: auto;">
+                </a>
+    
+            </div>
+    
+    
+            <!-- Footer -->
+            <footer class="page-footer font-small blue">
+    
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <h1>Tridiv Roy</h1> </a>
+                </div>
+                <!-- Copyright -->
+    
+            </footer>
+            <!-- Footer -->
+        </div>
+    
+    </div>
+
+
+    <div id="add" class="add">
+        <div class="card-upper-space card-lower-space bg">
+
+            <div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img" src="card-img.jpg">
+
+
+                <div class="inner-card">
+
+                    <form>
+                        <div class="form-group">
+                            <label>ডাটাবেসের নাম </label>
+                            <input type="text" class="form-control" id="db_ref" name="db_ref" placeholder="Ex: Songlist"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>গানের নাম্বার</label>
+                            <input type="text" class="form-control" id="c_id" name="c_id" placeholder="1 , 2 , 3"
+                                required>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label>গানের প্রথম অক্ষর</label>
+                            <input type="text" class="form-control" id="letter" name="letter">
+                        </div>
+
+                        <div class="form-group">
+                            <label>গানের নাম</label>
+                            <input type="text" class="form-control" id="title" name="title">
+                        </div>
+
+                        <div class="form-group">
+                            <label>গানের কথা</label>
+                            <textarea class="form-control" rows="3" id="lyric" name="lyric"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>পর্যায়</label>
+                            <input type="text" class="form-control" id="porjay" name="porjay">
+                        </div>
+
+                        <div class="form-group">
+                            <label>উপ-পর্যায়</label>
+                            <input type="text" class="form-control" id="upo_porjay" name="upo_porjay">
+                        </div>
+
+                        <div class="form-group">
+                            <label>ক্রমিক</label>
+                            <input type="text" class="form-control" id="song_num" name="song_num">
+                        </div>
+
+                        <div class="form-group">
+                            <label>রাগ</label>
+                            <input type="text" class="form-control" id="raag" name="raag">
+                        </div>
+
+                        <div class="form-group">
+                            <label>তাল</label>
+                            <input type="text" class="form-control" id="taal" name="taal">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>রচনাকাল(বঙ্গাব্দ</label>
+                            <input type="text" class="form-control" id="bn" name="bn">
+                        </div>
+
+                        <div class="form-group">
+                            <label>রচনাকাল(খ্রীষ্টাব্দ)</label>
+                            <input type="text" class="form-control" id="eng" name="eng">
+                        </div>
+
+                        <div class="form-group">
+                            <label>কবির বয়স</label>
+                            <input type="text" class="form-control" id="age" name="age">
+                        </div>
+
+                        <div class="form-group">
+                            <label>রচনাস্থান</label>
+                            <input type="text" class="form-control" id="place" name="place">
+                        </div>
+
+                        <div class="form-group">
+                            <label>প্রকাশ তারিখ</label>
+                            <input type="text" class="form-control" id="date" name="date">
+                        </div>
+
+                        <div class="form-group">
+                            <label>স্বরলিপি</label>
+                            <input type="text" class="form-control" id="not_info" name="not_info">
+                        </div>
+                        <div class="form-group">
+                            <label>স্বরলিপিকার</label>
+                            <input type="text" class="form-control" id="writer" name="writer">
+                        </div>
+                        <div class="form-group">
+                            <label>পাদটিকা</label>
+                            <input type="text" class="form-control" id="foot_note" name="foot_note">
+                        </div>
+
+                        <div class="form-group">
+                            <label>গানের কথার পরিবর্তন</label>
+                            <textarea class="form-control" rows="3" id="lyrical_change"
+                                name="lyrical_change"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>পাঠভেদ</label>
+                            <textarea class="form-control" id="disc" rows="3" name="disc"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>স্বরলিপি ফাইল</label>
+                            <input type="text" class="form-control" id="not_file" name="not_file">
+                        </div>
+                        <div class="form-group">
+                            <label>স্বরলিপি URL</label>
+                            <input type="text" class="form-control" id="url" name="url">
+                        </div>
+                    </form>
+
+                    <button class="btn" id="b1" value="show" onclick="clickEvent();" value="submit">Submit</button>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="del" class="del">
+        <div class="card-upper-space card-lower-space bg">
+
+            <div class="card">
+                <img class="card-img" src="card-img.jpg">
+
+
+                <div class="inner-card">
+
+                    <form>
+                        <div class="form-group">
+                            <label> ডাটাবেসের নাম </label>
+                            <input type="text" class="form-control" id="db_ref_del" name="db_ref_del"
+                                placeholder="Ex: Songlist">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>গানের নাম্বার</label>
+                            <input type="text" class="form-control" id="c_id_del" name="c_id_del" placeholder="1 , 2 , 3">
+                        </div>
+
+                    </form>
+
+                    <button class="delete-btn" id="b2" value="show" onclick="deleteEvent();" value="submit">Delete</button>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="up" class="up">
+        <div class="container-fluid"
+            style="padding-left: 40px;padding-right: 40px;padding-bottom:30px; background-color: #dda670;">
+            <div class="row">
+
+                <div class="col-sm-3" style="padding-top:10px; background-color:#ECEFF1;">
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1">Song Name</label> -->
+                        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()"
+                            placeholder="সার্চ করুন">
+                    </div>
+                    <div class="text-center">
+                        <div class="spinner-border" role="status" style="margin-top: 100px;">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="list" id="list">
+                        <ul class="list-group" id="myUL"></ul>
+                    </div>
+
+
+                </div>
+
+                <div class="col-sm-9" style="background-color:white;">
+
+                    <div class="container-fluid" style="padding-right:0px;">
+
+                        <div class="row">
+                            <div class="col-sm-6" style="padding-top:10px; background-color:#ECEFF1;">
+                                <form>
+                                    <div class="form-group">
+                                        <label>গানের নাম</label>
+                                        <input type="text" class="form-control" id="title_up" name="title">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>গানের কথা</label>
+                                        <textarea class="form-control" rows="15" id="lyric_up" name="lyric"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>পাঠভেদ</label>
+                                        <input type="text" class="form-control" id="foot_note_up" name="foot_note">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>পাদটিকা</label>
+                                        <textarea class="form-control" id="disc_up" rows="6" name="disc"></textarea>
+                                    </div>
+
+                                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                </form>
+                            </div>
+                            <div class="col-sm-6" style="padding-top:10px;background-color:#ECEFF1;">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>রাগ</label>
+                                            <input type="text" class="form-control" id="raag_up" name="raag">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>তাল</label>
+                                            <input type="text" class="form-control" id="taal_up" name="taal">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>পর্যায়</label>
+                                            <input type="text" class="form-control" id="porjay_up" name="porjay">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>উপ-পর্যায়</label>
+                                            <input type="text" class="form-control" id="upo_porjay_up" name="upo_porjay">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label>ক্রমিক</label>
+                                        <input type="text" class="form-control" id="num_up" name="num_up" required>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>কবির বয়স</label>
+                                        <input type="text" class="form-control" id="age_up" name="age">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label> রচনাস্থান </label>
+                                        <input type="text" class="form-control" id="place_up" name="place">
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:15px">
+                                    <div class="col-xs-6 col-md-6">
+                                        <label>রচনাকাল(বঙ্গাব্দ)</label>
+                                        <input type="text" class="form-control" id="bn_up" name="bn">
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                        <label>রচনাকাল(খ্রীষ্টাব্দ)</label>
+                                        <input type="text" class="form-control" id="eng_up" name="eng">
+                                    </div>
+                                </div>
+
+
+                                <div class="row" style="margin: auto;">
+                                    <label style="margin-top:15px">প্রকাশ</label>
+                                    <input type="text" class="form-control" id="date_up" name="date">
+                                </div>
+
+                                <div class="row" style="margin: auto;">
+                                    <label style="margin-top:15px">স্বরলিপি</label>
+                                    <input type="text" class="form-control" id="not_info_up" name="not_info">
+                                </div>
+
+                                <div class="row" style="margin: auto;">
+                                    <label style="margin-top:15px">স্বরলিপিকার</label>
+                                    <input type="text" class="form-control" id="writer_up" name="writer">
+                                </div>
+
+                                <button type="button" class="show-note">Show Notation</button>
+
+
+                                <label style="margin-top:15px">স্বরলিপি আপলোড</label>
+                                <div class="row">
+
+                                    <div class="col-xs-6 col-md-6">
+
+                                        <span id="spnFilePath">
+                                            <input type="text" id="notation-path" class="form-control"
+                                                id="exampleInputPassword1">
+                                        </span>
+
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                        <input type="button" id="btnFileUpload" value="Select File" class="load-note"
+                                            style="width: 100%;" />
+                                        <input type="file" id="FileUpload1" class="file" style="display: none" />
+
+                                        <!-- <button type="submit" class="load-note" style="width: 100%;">Submit</button> -->
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="update-button" onclick="updateEvent();"
+                                    style="width: 100%;">SAVE THE SONG</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- div Playing the music -->
+    <div id="player"></div>
+
+    <!-- Importing the jquery file -->
+    <script type="text/JavaScript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <!-- One page control  -->
+    <script src="page-control.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <!-- Importing the firebase app info -->
+    <script src="app-info.js"></script>
+    <!-- Importing music playing file -->
+    <script src="music.js"></script>
+    <!-- Importing song searching file -->
+    <script src="song-search.js"></script>
+
+    <!-- Sweet alert import -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+</body>
+
+</html>
